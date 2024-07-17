@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&family=Righteous&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Righteous', cursive;
+
+    transition: .3s ease;
+} 
+
+// Todas as cores do projeto
+:root{
+    --primaryColor: #ffd500;
+    --bgColor: #14213d;
+    --whiteColor: hsl(0, 0%, 100%); 
+    --blackColor: #14213d;
+    --cardColor: #fdf9d7;
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}

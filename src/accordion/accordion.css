@@ -1,0 +1,70 @@
+:root {
+  --primaryColor: #ffd500;
+  --bgColor: #14213d;
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: #14213d;
+  --cardColor: #fdf9d7;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: var(--bgColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.accordion .title {
+  color: var(--primaryColor);
+  font-weight: 900;
+  padding-bottom: 5rem;
+  text-align: center;
+  font-family: "Righteous", cursive;
+}
+.accordion .secContainer .singleContainer {
+  width: 100%;
+  max-width: 360px;
+}
+.accordion .secContainer .singleContainer .heading {
+  font-size: 0.95rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  background: var(--primaryColor);
+}
+.accordion .secContainer .singleContainer .heading .headingIcon {
+  cursor: pointer;
+  z-index: 100;
+}
+.accordion .secContainer .singleContainer .heading .headingIcon .icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--blackColor);
+  transition: all 0.5s ease;
+}
+.accordion .secContainer .singleContainer .heading .headingIcon .icon:hover {
+  transform: rotate(180deg);
+}
+.accordion .secContainer .singleContainer .description {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  line-height: 23px;
+  white-space: pre-line;
+  height: 0;
+  opacity: 0;
+  padding: 0 1rem;
+  background: var(--cardColor);
+  color: var(--blackColor);
+  border-radius: 0 0 10px 10px;
+}
+.accordion .secContainer .singleContainer .show {
+  height: 140px;
+  opacity: 1;
+}
+.accordion .secContainer .singleContainer .activeTitle {
+  border-radius: 10px 10px 0 0;
+}/*# sourceMappingURL=accordion.css.map */

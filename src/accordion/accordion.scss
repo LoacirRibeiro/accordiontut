@@ -1,0 +1,82 @@
+:root{
+    --primaryColor: #ffd500;
+    --bgColor: #14213d;
+    --whiteColor: hsl(0, 0%, 100%); 
+    --blackColor: #14213d;
+    --cardColor: #fdf9d7;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: var(--bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.accordion{
+    .title{
+        color: var(--primaryColor);
+        font-weight: 900;
+        padding-bottom: 5rem;
+        text-align: center;
+        font-family: 'Righteous', cursive;
+    }
+
+    .secContainer{
+        .singleContainer{
+            width: 100%;
+            max-width: 360px;
+
+            .heading{
+                font-size: .95rem;
+                align-items: center;
+                padding: 1rem;
+                border-radius: 10px;
+                justify-content: space-between;
+                background: var(--primaryColor);
+
+                .headingIcon{
+                    cursor: pointer;
+                    z-index: 100;
+
+                    .icon{
+                        font-size: 1.3rem;
+                        cursor: pointer;
+                        color: var(--blackColor);
+                        transition: all .5s ease;
+
+                        &:hover{
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+
+            .description{
+                font-size: .85rem;
+                display: flex;
+                align-items: center;
+                line-height: 23px;
+                white-space: pre-line;
+                height: 0; // mais tarde será 0 por padrão
+                opacity: 0; // mais tarde será 0 por padrão
+                padding: 0 1rem;
+                background: var(--cardColor);
+                color: var(--blackColor);
+                border-radius: 0 0 10px 10px;
+            }
+
+            .show{
+                height: 140px;
+                opacity: 1;
+            }
+
+            .activeTitle{
+                border-radius:  10px 10px 0 0 ;
+            }
+        }
+    }
+}
